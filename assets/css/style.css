@@ -46,7 +46,7 @@ body {
 }
 
 .navbar-brand {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bolder;
   color: white;
@@ -76,19 +76,20 @@ body {
 .navbar-nav .nav-item a.nav-link.btn {
   font-size: 14px;
   font-weight: bold;
-  border: 1.3px solid #FECC0A;
+  border: 1.3px solid #fecc0a;
   border-radius: 50px;
   border-bottom-right-radius: 0px;
   padding: 10px 20px;
 }
 
 .navbar-nav .nav-item a.nav-link.btn.nav-btn-filled {
-  background-color: #FECC0A;
+  background-color: #fecc0a;
   color: black;
 }
 
-.banner-small-text, .banner-sub-heading {
-  font-family: 'Maven Pro', sans-serif;
+.banner-small-text,
+.banner-sub-heading {
+  font-family: "Maven Pro", sans-serif;
   font-weight: 500;
   font-size: 14px;
 }
@@ -97,8 +98,9 @@ body {
   height: 59vh;
 }
 
-.banner-footer-count, .banner-heading {
-  font-family: 'Maven Pro', sans-serif;
+.banner-footer-count,
+.banner-heading {
+  font-family: "Maven Pro", sans-serif;
   font-weight: bolder;
   font-size: 45px;
   color: #fecc0a;
@@ -111,7 +113,7 @@ body {
 }
 
 .banner-footer-count-text {
-  font-family: 'Maven Pro', sans-serif;
+  font-family: "Maven Pro", sans-serif;
   font-weight: bolder;
   font-size: 17px;
   color: #fff;
@@ -124,11 +126,100 @@ body {
   padding: 0;
 }
 
-.banner-social-link, .banner-social-link:focus, .banner-social-link:hover {
+.banner-social-link,
+.banner-social-link:focus,
+.banner-social-link:hover {
   color: #0e163d;
 }
 
 .banner-heading {
   color: white;
   text-transform: capitalize;
+}
+
+.testimonial-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05)
+  );
+}
+
+.testimonial-section .sub-heading,
+.testimonial-ad-heading,
+.testimonial-ad-badge, .testimonial-ad-text, .testimonial-name p {
+  color: #0e163d;
+  font-family: "Maven Pro", sans-serif;
+}
+
+.testimonial-section .sub-heading {
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+.testimonial-ad-badge {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.testimonial-ad-heading {
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.testimonial-ad-text {
+  font-size: 14px;
+}
+
+.cta {
+  padding: 9px 20px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  color: #0e163d;
+  font-size: 9px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;align-items: center;
+}
+
+.cta-outlined {
+  background-color: transparent;
+  border: 1.5px solid #fecc0a;
+}
+
+.cta-filled {
+  background-color: #fecc0a;
+  border: 1.5px solid #fecc0a;
+}
+
+.vertical-divider {
+  border: 0.25px solid #ccc;
+  width: 0;
+  padding: 0;
+  height: 120px;
+}
+
+.testimonial-card {
+  box-shadow: 0px 30px 30px #00000029;
+  border: none;
+  margin-top: 50px;
+}
+
+.testimonial-quote {
+  font-family: "malayalam", sans-serif;
+  font-size: 114px;
+  line-height: 70px;
+}
+
+.testimonial-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.testimonial-name p {
+  font-size: 11px;
 }
