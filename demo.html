@@ -1,251 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
   <style>
-    .carousel-item {
-      height: 100vh;
+    /* card */
+    .card {
+      border: 0;
+      border-radius: 0px;
     }
 
-    .carousel-item img {
-      height: 100%;
+    /* card header */
+    .card-header {
+      background-color: transparent;
+      border-bottom: 0;
+      padding: 0;
+    }
+    .card-header h6 {
+      color: #9c9eac;
+    }
+    .card-select .form-select {
+      background-color:  #f3f4f6; /**/
+      border: 0;
+    }
+
+    /* card body */
+    .card-body {
+      padding: 0;
+    }
+    .card-body h1 {
+      font-size: 40px;
+    }
+    .profit-percentage {
+      background-color: #f0fdf4;
+      padding: 5px 20px;
+      border-radius: 6px;
+      margin-right: 6px;
+    }
+    .profit-price {
+      font-size: 23px;
+    }
+    .profit-percentage, .profit-price {
+      color: #1aa651;
+    }
+
+    /* card footer */
+    .card-footer {
+      background-color: transparent;
+      border-top: none;
+      border-bottom: 1.2px solid #eae9ee;
+      border-radius: 0px !important;
+      padding-bottom: 20px;
+    }
+    .card-footer h4 {
+    font-size: 20px;
+      color: #99a2ab;
+    }
+
+    .display-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
   </style>
+
 </head>
-
 <body>
-
-  <form class="col-5 col-md-9 mt-5 mx-auto">
-    <input type="text">
-    <input type="text" class="form-control form-control-lg" placeholder="username">
-    <p class="form-text">Input your username only</p>
-    <textarea placeholder="write description" rows="5" cols="100"></textarea>
-    <textarea class="form-control" placeholder="write description" rows="5"></textarea>
-    <select class="form-control">
-      <option>Apple</option>
-      <option>Pineapple</option>
-      <option>Mango</option>
-      <option>Bannana</option>
-    </select>
-    <input type="checkbox" class="form-check-input">
-    <div class="input-group mb-3">
-      <span class="input-group-text" id="basic-addon1">
-        <i class="fas fa-user"></i>
-      </span>
-      <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-        aria-describedby="basic-addon1">
-    </div>
-    <div class="form-floating mb-3">
-      <input type="text" class="form-control" id="floatingInput" placeholder="name">
-      <label for="floatingInput">Name</label>
-    </div>
-  </form>
-
-  <div class="accordion" id="accordion">
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-          aria-expanded="false" aria-controls="collapseOne">
-          Accordion Item #1
-        </button>
-      </h2>
-      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin
-          adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-          as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-          overriding our default variables. It's also worth noting that just about any HTML can go within the
-          <code>.accordion-body</code>, though the transition does limit overflow.
-          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin
-          adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-          as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-          overriding our default variables. It's also worth noting that just about any HTML can go within the
-          <code>.accordion-body</code>, though the transition does limit overflow.
-          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin
-          adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-          as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-          overriding our default variables. It's also worth noting that just about any HTML can go within the
-          <code>.accordion-body</code>, though the transition does limit overflow.
-          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin
-          adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-          as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-          overriding our default variables. It's also worth noting that just about any HTML can go within the
-          <code>.accordion-body</code>, though the transition does limit overflow.
+  <main class="col-12 d-flex justify-content-center p-4">
+    <!-- card -->
+    <div class="col-12 col-md-5 card">
+      <!-- card header -->
+      <div class="col-12 d-flex justify-content-between align-items-center card-header">
+        <h6>Current Balance <i class="bi bi-eye-slash"></i></h6>
+        <div class="card-select">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>6m</option>
+            <option value="1">12m</option>
+            <option value="2">24m</option>
+            <option value="3">48m</option>
+          </select>
         </div>
       </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-          aria-expanded="false" aria-controls="collapseTwo">
-          Accordion Item #2
-        </button>
-      </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin
-          adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-          as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-          overriding our default variables. It's also worth noting that just about any HTML can go within the
-          <code>.accordion-body</code>, though the transition does limit overflow.
+
+      <!-- card body -->
+      <div class="col-12 card-body">
+        <!-- balance -->
+        <h1 class="col-12" id="balance">$775,897.87</h1>
+        <div class="d-flex align-items-center profit">
+          <span class="d-flex profit-percentage">
+            99.67%
+          </span>
+          <!-- profit -->
+          <span class="d-flex profit-price" id="profit">$775,897.87</span>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="col-3 mx-auto my-4 position-relative">
-    <i class="fa-2x fas fa-bell"></i>
-    <span class="position-absolute top-0 start-1 translate-middle badge rounded-pill bg-primary">
-      9
-    </span>
-  </div>
 
-  <div class="btn-group" role="group" aria-label="Basic example">
-    <button type="button" class="btn btn-primary">
-      <i class="fas fa-paper-plane"></i>
-    </button>
-    <button type="button" class="btn btn-primary">Submit Later</button>
-  </div>
-
-  <div class="card col-3 mx-auto">
-    <img src="assets/images/banner-2.png" class="card-img-top" alt="">
-    <h3 class="card-title">hello world</h3>
-    <div class="card-body">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat possimus minima quia cum iste laudantium ipsa
-      illum quo autem enim nesciunt porro, soluta nostrum dolores, aut voluptate accusamus eius maxime.
-    </div>
-  </div>
-
-  <div id="carouselExample" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="assets/images/banner-2.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>sdlmklsmdvmsldkl.</p>
+      <!-- card footer -->
+      <div class="col-12 d-flex justify-content-between mt-3 card-footer">
+        <h4>Total Profit <i class="bi bi-info-circle"></i></h4>
+        <div class="d-flex align-items-center profit">
+          <span class="d-flex profit-percentage">
+            99.67%
+          </span>
+          <!-- net profit -->
+          <span class="d-flex profit-price" id="netProfit">$775,897.87</span>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="assets/images/banner.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 
-  <div class="card col-md-6 col-12">
-    <div id="carouselExampleCaptions" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="assets/images/pexels-robin-stickel-70497.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First Food Option</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+    </div>
+    <div class="display-bottom px-3 col-12">
+      <div class="row justify-content-center">
+        <form class="col-12 col-md-4" id="balanceForm">
+          <div class="col-12 mb-3 d-flex justify-content-between">
+            <input class="form-control" type="text" placeholder="Balance value" name="balance" required>
+            <div class="d-flex justify-content-center px-2">
+              <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/images/pexels-ella-olsson-1640772.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second Food Option</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+        </form>
+        
+        <form class="col-12 col-md-4" id="profitForm">
+          <div class="col-12 mb-3 d-flex justify-content-between">
+            <input class="form-control" type="text" placeholder="Profit value" name="profit" required>
+            <div class="d-flex justify-content-center px-2">
+              <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/images/pexels-rajesh-tp-1624487.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third Food Option</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+        </form>
+        
+        <form class="col-12 col-md-4" id="netProfitForm">
+          <div class="col-12 mb-3 d-flex justify-content-between">
+            <input class="form-control" type="text" placeholder="Net profit value" name="netProfit" required>
+            <div class="d-flex justify-content-center px-2">
+              <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            </div>
           </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <div class="card-body">
-      <h4 class="card-title">Food Options</h4>
-    </div>
-  </div>
-
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
-  </button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+        </form>
       </div>
     </div>
-  </div>
-
-  <div>
-    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
-      aria-expanded="false" aria-controls="collapseExample">
-      Button with data-bs-target
-    </button>
-  </div>
-  <div class="collapse" id="collapseExample">
-    <div class="card card-body">
-      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user
-      activates the relevant trigger.
-    </div>
-  </div>
-
-  <p class="col-12 p-0 border">
-    dsklkslvnksdnksdnknasdkvnklsn lsdkl dfkl
-  </p>
-
-  <script src="assets/js/all.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
+  </main>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="assets/js/app.js" defer></script>
 </body>
-
 </html>
