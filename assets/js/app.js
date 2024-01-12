@@ -2,9 +2,9 @@ let balance = document.getElementById("balance");
 let profit = document.getElementById("profit");
 let netProfit = document.getElementById("netProfit");
 let profitPercent = document.getElementById("profitPercent");
-let netProfitPercent = document.getElementById("netProfitPercent");
+// let netProfitPercent = document.getElementById("netProfitPercent");
 
-console.log(balance.textContent, profit, netProfit);
+// console.log(balance.textContent, profit, netProfit);
 
 let balanceForm = document.getElementById("balanceForm");
 let profitForm = document.getElementById("profitForm");
@@ -46,13 +46,13 @@ const getProfitPercentFormVal = profitPercentForm.addEventListener("submit", e =
   profitPercentForm.reset();
 });
 
-const getNetProfitPercentFormVal = netProfitPercentForm.addEventListener("submit", e => {
-  e.preventDefault();
-  let netProfitPercentInput = netProfitPercentForm.netProfitPercent;
-  console.log(`Net Profit Form Value is ${netProfitPercentInput.value}`);
-  netProfitPercent.textContent = `${parseFloat(netProfitPercentInput.value)}%`;
-  netProfitPercentForm.reset();
-});
+// const getNetProfitPercentFormVal = netProfitPercentForm.addEventListener("submit", e => {
+//   e.preventDefault();
+//   let netProfitPercentInput = netProfitPercentForm.netProfitPercent;
+//   console.log(`Net Profit Form Value is ${netProfitPercentInput.value}`);
+//   netProfitPercent.textContent = `${parseFloat(netProfitPercentInput.value)}%`;
+//   netProfitPercentForm.reset();
+// });
 
 // // getBalFormVal, getProfitFormVal, getNetProfitFormVal
 // let updateBal = () => {
