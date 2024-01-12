@@ -91,7 +91,7 @@
         <!-- balance -->
         <h1 class="col-12" id="balance">$775,897.87</h1>
         <div class="d-flex align-items-center profit">
-          <span class="d-flex profit-percentage">
+          <span class="d-flex profit-percentage" id="profitPercent">
             99.67%
           </span>
           <!-- profit -->
@@ -104,7 +104,7 @@
         <div class="row justify-content-between">
           <h4 class="col-md col-12">Total Profit <i class="bi bi-info-circle"></i></h4>
           <div class="col-md col-12 d-flex align-items-center profit">
-            <span class="d-flex profit-percentage">
+            <span class="d-flex profit-percentage" id="netProfitPercent">
               99.67%
             </span>
             <!-- net profit -->
@@ -137,6 +137,24 @@
         <form class="col-12 col-md-4" id="netProfitForm">
           <div class="col-12 mb-3 d-flex justify-content-between">
             <input class="form-control" type="text" placeholder="Net profit value" name="netProfit" required>
+            <div class="d-flex justify-content-center px-2">
+              <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+          </div>
+        </form>
+
+        <form class="col-12 col-md-4" id="profitPercentForm">
+          <div class="col-12 mb-3 d-flex justify-content-between">
+            <input class="form-control" type="text" placeholder="Profit percent value" name="profitPercent" required>
+            <div class="d-flex justify-content-center px-2">
+              <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+          </div>
+        </form>
+
+        <form class="col-12 col-md-4" id="netProfitPercentForm">
+          <div class="col-12 mb-3 d-flex justify-content-between">
+            <input class="form-control" type="text" placeholder="Net profit percent value" name="netProfitPercent" required>
             <div class="d-flex justify-content-center px-2">
               <button type="submit" class="btn btn-primary btn-lg">Submit</button>
             </div>
